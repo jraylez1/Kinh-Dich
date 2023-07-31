@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hymalia", "Hymalia\Hymalia.csproj", "{94A3DB75-DC4E-4A35-8F41-40134A4DAB4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hymalia.Common", "Hymalia.Common\Hymalia.Common.csproj", "{3D649DCB-9A37-4B9A-8066-29EC39DFF6E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hymalia.Database", "Hymalia.Database\Hymalia.Database.csproj", "{5100EB13-83D2-496F-8DD2-F716037FCC98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navi.Library", "Navi.Library\Navi.Library.csproj", "{C5024C4E-9CAF-4EA6-9299-DB8426A6DA7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navi.MongoDb", "Navi.MongoDb\Navi.MongoDb.csproj", "{A4F0795B-096D-4696-80F4-2533736DA895}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94A3DB75-DC4E-4A35-8F41-40134A4DAB4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94A3DB75-DC4E-4A35-8F41-40134A4DAB4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94A3DB75-DC4E-4A35-8F41-40134A4DAB4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94A3DB75-DC4E-4A35-8F41-40134A4DAB4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D649DCB-9A37-4B9A-8066-29EC39DFF6E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D649DCB-9A37-4B9A-8066-29EC39DFF6E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D649DCB-9A37-4B9A-8066-29EC39DFF6E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D649DCB-9A37-4B9A-8066-29EC39DFF6E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5100EB13-83D2-496F-8DD2-F716037FCC98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5100EB13-83D2-496F-8DD2-F716037FCC98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5100EB13-83D2-496F-8DD2-F716037FCC98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5100EB13-83D2-496F-8DD2-F716037FCC98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5024C4E-9CAF-4EA6-9299-DB8426A6DA7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5024C4E-9CAF-4EA6-9299-DB8426A6DA7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5024C4E-9CAF-4EA6-9299-DB8426A6DA7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5024C4E-9CAF-4EA6-9299-DB8426A6DA7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4F0795B-096D-4696-80F4-2533736DA895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4F0795B-096D-4696-80F4-2533736DA895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4F0795B-096D-4696-80F4-2533736DA895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4F0795B-096D-4696-80F4-2533736DA895}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,92 @@
+﻿@using Navi.Library.Localization
+@using Newtonsoft.Json
+@{
+    ViewBag.Title = ViewBag.HeaderTitle = SharedLocalizer.GetText("User log");
+    var today = DateTime.Today;
+    var users = ViewBag.Users as List<SelectListItem> ?? new List<SelectListItem>();
+}
+
+<div class="row auto-module">
+    @Html.Hidden("module_configs", JsonConvert.SerializeObject(new
+    {
+        key = "UserLog",
+        controllerName = "UserLog",
+        name = SharedLocalizer.GetText("User log").ToString(),
+        names = SharedLocalizer.GetText("User logs").ToString()
+    }))
+    <div class="col-12">
+        <!-- BEGIN: search -->
+        <div class="card card-outline card-primary search-box">
+            <div class="card-header">
+                <h3 class="card-title">Công cụ tìm kiếm</h3>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body" id="cardBodySearch">
+                <form>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Nội dung</label>
+                                <input type="text" class="form-control" placeholder="Nhập nội dung" name="keyword"/>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Nhân viên</label>
+                                <select class="form-control" name="idUser" asp-items="users"></select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Từ ngày</label>
+                                <input type="text" class="form-control date-picker" name="fromDate" value="@today.AddMonths(-1).ToString("dd/MM/yyyy")"/>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Đến ngày</label>
+                                <input type="text" class="form-control date-picker" name="toDate" value="@today.ToString("dd/MM/yyyy")"/>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Số bảng ghi trên 1 trang</label>
+                               <select class="recordsPerPage form-control"></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center col-12">
+                            <button class="btn btn-primary"><i class="fas fa-search"></i> Tìm kiếm ngay!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- END: search -->
+    
+        <!-- BEGIN: table -->
+        <div class="card card-outline card-primary data-box">
+            <div class="card-header">
+                <h3 class="card-title">@SharedLocalizer.GetText("User log list")</h3>
+            </div>
+            <div class="card-body p-0">
+                <table class="tbl-data table no-style table-bordered table-striped" data-order-column="Name" data-order-dir="asc" data-scroll-x="true">
+                    <thead>
+                    <tr>
+                        <th style="width: 40px; min-width: 40px" data-orderable="false">STT</th>
+                        <th data-name="CreateDate">Ngày tạo</th>
+                        <th data-name="IdUser">Nhân viên thực hiện</th>
+                        <th data-name="Content">Nội dung</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <!-- END: table -->
+    </div>
+</div>

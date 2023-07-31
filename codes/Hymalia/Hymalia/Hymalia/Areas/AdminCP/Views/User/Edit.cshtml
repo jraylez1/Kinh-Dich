@@ -1,0 +1,38 @@
+﻿@model Hymalia.Areas.AdminCP.Models.User.EditRequestModel
+@{
+    Layout = null;
+}
+
+<form asp-action="Edit" asp-controller="User" method="post" onsubmitsuccess="window.User.onEditSubmitSuccess">
+    <input type="hidden" asp-for="id">
+    <div class="col-md-12">
+        <div class="form-group">
+            <label>Họ và tên<span class="text-danger font-italic">*</span></label>
+            <input type="text" class="form-control" asp-for="fullName" placeholder="Nhập họ và tên">
+            <span asp-validation-for="fullName"></span>
+        </div>
+        <div class="form-group">
+            <label>Tên đăng nhập<span class="text-danger font-italic">*</span></label>
+            <input type="text" class="form-control" asp-for="userName" placeholder="Nhập tên đăng nhập">
+            <span asp-validation-for="userName"></span>
+        </div>
+        <div class="form-group">
+            <label>Mật khẩu<span class="text-danger font-italic">*</span></label>
+            <input type="password" class="form-control" asp-for="password" placeholder="Nhập mật khẩu">
+            <span asp-validation-for="password"></span>
+        </div>
+        <div class="form-group">
+            <label>Xác thực mật khẩu<span class="text-danger font-italic">*</span></label>
+            <input type="password" class="form-control" asp-for="retypePassword" placeholder="Nhập lại mật khẩu">
+            <span asp-validation-for="retypePassword"></span>
+        </div>
+        <div class="form-group">
+            <label for=""></label>
+            <div class="checkbox icheck-primary">
+                <input type="checkbox" id="primary" class="form-control" asp-for="isBlocked"/>
+                <label for="primary">Khóa tài khoản</label>
+            </div>
+        </div>
+            
+    </div>
+</form>

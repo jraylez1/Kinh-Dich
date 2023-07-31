@@ -1,0 +1,38 @@
+﻿@model Hymalia.Areas.AdminCP.Models.RegisterCourse.EditRequestModel
+
+@{
+    Layout = null;
+}
+
+<form asp-action="Edit" asp-controller="RegisterCourse" method="post" onsubmitsuccess="window.RegisterCourse.onAddSubmitSuccess">
+   <input type="hidden" asp-for="id">
+    <div class="col-md-12">
+        <div class="form-group">
+            <label>@SharedLocalizer.GetText("Full name")<span class="text-danger font-italic">*</span></label>
+            <input type="text" class="form-control" asp-for="fullName" placeholder="Nhập họ và tên">
+            <span asp-validation-for="fullName"></span>
+        </div>
+        <div class="form-group">
+            <label>@SharedLocalizer.GetText("Mobile")<span class="text-danger font-italic">*</span></label>
+            <input type="tel" class="form-control" asp-for="mobile" placeholder="Nhập số điện thoại">
+            <span asp-validation-for="mobile"></span>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" asp-for="email" placeholder="Nhập email">
+            <span asp-validation-for="email"></span>
+        </div>
+        <div class="form-group">
+            <label>@SharedLocalizer.GetText("Address")</label>
+            <input type="text" class="form-control" asp-for="address" placeholder="Nhập địa chỉ">
+        </div>
+        <div class="form-group">
+            <label>@SharedLocalizer.GetText("Age")</label>
+            <input type="number" class="form-control" asp-for="age" placeholder="Nhập tuổi">
+        </div>
+        <div class="form-group">
+            <label>@SharedLocalizer.GetText("Diseases")</label>
+            <input type="text" class="form-control" asp-for="diseases" placeholder="Nhập bệnh tật (Nếu có)">
+        </div>
+    </div>
+</form>

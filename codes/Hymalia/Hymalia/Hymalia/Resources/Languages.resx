@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="FormatDate" xml:space="preserve">
+        <value>dd/MM/yyyy</value>
+    </data>
+    <data name="FormatDateTime" xml:space="preserve">
+        <value>HH:mm dd/MM/yyyy</value>
+    </data>
+    <data name="Session ended please resign-in" xml:space="preserve">
+        <value>Phiên làm việc kết thúc. Vui lòng đăng nhập lại.</value>
+    </data>
+    <data name="Access denied" xml:space="preserve">
+        <value>Hạn chế quyền truy cập.</value>
+    </data>
+    <data name="Invalid data" xml:space="preserve">
+        <value>Dữ liệu không hợp lệ.</value>
+    </data>
+    <data name="Invalid email format" xml:space="preserve">
+        <value>Định dạng email không hợp lệ.</value>
+    </data>
+    <data name="This is required field" xml:space="preserve">
+        <value>Đây là dữ liệu bắt buộc.</value>
+    </data>
+    <data name="Mobile number" xml:space="preserve">
+        <value>Số di động</value>
+    </data>
+    <data name="Mobile format is wrong" xml:space="preserve">
+        <value>Định dạng số di động không hợp lệ.</value>
+    </data>
+    <data name="{0} is not exist or deleted" xml:space="preserve">
+        <value>{0} không tồn tại hoặc đã bị xóa.</value>
+    </data>
+    <data name="{0} has been used" xml:space="preserve">
+        <value>{0} đã được sử dụng.</value>
+    </data>
+    <data name="{0} has been blocked" xml:space="preserve">
+        <value>{0} đã bị khóa.</value>
+    </data>
+    <data name="{0} must be greater than or equal to {1}" xml:space="preserve">
+        <value>{0} phải lớn hơn hoặc bằng {1}.</value>
+    </data>
+    <data name="{0} must be less than or equal to {1}" xml:space="preserve">
+        <value>{0} phải nhỏ hơn hoặc bằng {1}.</value>
+    </data>
+    <data name="{0} must be between {1} and {2}" xml:space="preserve">
+        <value>{0} phải trong khoảng từ {1} đến {2}.</value>
+    </data>
+    <data name="{0} with a maximum length of {1}" xml:space="preserve">
+        <value>{0} có độ dài tối đa là {1}.</value>
+    </data>
+    <data name="{0} with a minimum length of {1}" xml:space="preserve">
+        <value>{0} có độ dài tối thiểu là {1}.</value>
+    </data>
+    <data name="Admin has not configured this service" xml:space="preserve">
+        <value>Quản trị viên chưa cấu hình dịch vụ này.</value>
+    </data>
+    <data name="Service" xml:space="preserve">
+        <value>Dịch vụ</value>
+    </data>
+    <data name="We sent profile number to your number. Please check message box to continue" xml:space="preserve">
+        <value>Chúng tôi đã gửi mã hồ sơ đến thiết bị di động của bạn. Vui lòng kiểm tra tin nhắn để nhận mã hồ sơ và thực hiện các bước tiếp theo.</value>
+    </data>
+    <data name="Admin has not configured status for this service" xml:space="preserve">
+        <value>Quản trị viên chưa cấu hình trạng thái cho dịch vụ này.</value>
+    </data>
+    <data name="Profile" xml:space="preserve">
+        <value>Hồ sơ</value>
+    </data>
+    <data name="Admin has not configured this document" xml:space="preserve">
+        <value>Quản trị viên chưa cấu hình văn bản này.</value>
+    </data>
+    <data name="Back" xml:space="preserve">
+        <value>Quay lại</value>
+    </data>
+    <data name="Next" xml:space="preserve">
+        <value>Tiếp tục</value>
+    </data>
+    <data name="You cannot skip this step" xml:space="preserve">
+        <value>Bạn không thể bỏ qua bước nhập này.</value>
+    </data>
+    <data name="Do you want to save this document" xml:space="preserve">
+        <value>Bạn có thật sự muốn lưu văn bản này.</value>
+    </data>
+    <data name="Do you want to skip this document" xml:space="preserve">
+        <value>Bạn có thật sự muốn bỏ qua văn bản này?</value>
+    </data>
+    <data name="Do you want to send this profile" xml:space="preserve">
+        <value>Bạn có thật sự muốn gửi hồ sơ này đến SGTVT Hải Phòng?</value>
+    </data>
+    <data name="Done" xml:space="preserve">
+        <value>Hoàn thành</value>
+    </data>
+    <data name="Delete" xml:space="preserve">
+        <value>Xóa</value>
+    </data>
+    <data name="Select" xml:space="preserve">
+        <value>Chọn</value>
+    </data>
+    <data name="File is not support this format. Format must be: " xml:space="preserve">
+        <value>Tệp tin không được hỗ trợ. Vui lòng chỉ sử dụng các định dạng sau: </value>
+    </data>
+    <data name="Please upload documents" xml:space="preserve">
+        <value>Vui lòng cập nhật đầy đủ các tài liệu sau:</value>
+    </data>
+    <data name="You cannot cancel this profile" xml:space="preserve">
+        <value>Bạn không thể hủy hồ sơ này.</value>
+    </data>
+    <data name="Profile cancelled successful" xml:space="preserve">
+        <value>Hủy bỏ hồ sơ thành công.</value>
+    </data>
+    <data name="Please enter document before download this profile" xml:space="preserve">
+        <value>Vui lòng nhập văn bản trước khi tải hồ sơ này.</value>
+    </data>
+
+    <data name="Error in processing" xml:space="preserve">
+        <value>Lỗi trong quá trình xử lý.</value>
+    </data>
+    <data name="Invalid parameters" xml:space="preserve">
+        <value>Dữ liệu không hợp lệ.</value>
+    </data>
+    <data name="Invalid {0} format" xml:space="preserve">
+        <value>Định dạng {0} không hợp lệ.</value>
+    </data>
+    <data name="{0} is used" xml:space="preserve">
+        <value>{0} đã được sử dụng.</value>
+    </data>
+    <data name="{0} is not exist" xml:space="preserve">
+        <value>{0} không tồn tại trên hệ thống.</value>
+    </data>
+    <!-- END: SYSTEM MESSAGE -->
+
+    <data name="Sign in information wrong" xml:space="preserve">
+        <value>Thông tin đăng nhập không chính xác.</value>
+    </data>
+    <data name="Session end please sign-in again" xml:space="preserve">
+        <value>Phiên làm việc kết thúc. Vui lòng đăng nhập lại để tiếp tục thao tác.</value>
+    </data>
+    <data name="Sign in to control panel" xml:space="preserve">
+        <value>Đăng nhập đến bảng điều khiển</value>
+    </data>
+    <data name="Remember me" xml:space="preserve">
+        <value>Lưu thông tin</value>
+    </data>
+    <data name="Username" xml:space="preserve">
+        <value>Tên đăng nhập</value>
+    </data>
+    <data name="Password" xml:space="preserve">
+        <value>Mật khẩu</value>
+    </data>
+    <data name="Sign in" xml:space="preserve">
+        <value>Đăng nhập</value>
+    </data>
+    <data name="Sign out" xml:space="preserve">
+        <value>Đăng xuất</value>
+    </data>
+
+    <data name="Information" xml:space="preserve">
+        <value>Thông tin người dùng</value>
+    </data>
+
+    <data name="Add" xml:space="preserve">
+        <value>Thêm mới</value>
+    </data>
+    <data name="Edit" xml:space="preserve">
+        <value>Sửa</value>
+    </data>
+    <data name="Import" xml:space="preserve">
+        <value>Nhập file</value>
+    </data>
+    <data name="Export" xml:space="preserve">
+        <value>Xuất file</value>
+    </data>
+    <data name="Please select one or more items to delete" xml:space="preserve">
+        <value>Hãy lựa chọn ít nhất một dữ liệu trước khi xóa.</value>
+    </data>
+    <data name="Item(s) delete successfully" xml:space="preserve">
+        <value>Xóa (những) dữ liệu đã chọn thành công.</value>
+    </data>
+    <data name="Item added successfully" xml:space="preserve">
+        <value>Thêm mới dữ liệu thành công.</value>
+    </data>
+    <data name="Item updated successfully" xml:space="preserve">
+        <value>Cập nhật dữ liệu thành công.</value>
+    </data>
+    <data name="Select2_all" xml:space="preserve">
+        <value>--- Tất cả ---</value>
+    </data>
+    <data name="Your account has been blocked by administrator." xml:space="preserve">
+        <value>Tài khoản của bạn đã bị khóa bởi quản trị viên.</value>
+    </data>
+    <data name="Fullname format" xml:space="preserve">
+        <value>{1} {0}</value>
+    </data>
+    <data name="User list" xml:space="preserve">
+        <value>Danh sách tài khoản</value>
+    </data>
+    <data name="Username is used" xml:space="preserve">
+        <value>Tài khoản này đã tồn tại</value>
+    </data>
+    <data name="Code is used" xml:space="preserve">
+        <value>Mã này đã tồn tại</value>
+    </data>
+    <data name="Password current false" xml:space="preserve">
+        <value> Mật khẩu cũ sai  </value>    
+    </data>
+    <data name="{0} is required" xml:space="preserve">
+        <value>{0} bắt buộc phải nhập</value>    
+    </data>
+    <data name="LastName" xml:space="preserve">
+        <value> Họ </value>    
+    </data>
+    <data name="Firstname" xml:space="preserve">
+        <value> Tên</value>    
+    </data>
+    <data name="Sex" xml:space="preserve">
+        <value> Giới tính </value>    
+    </data>
+    <data name="BirthDay" xml:space="preserve">
+        <value> Ngày sinh </value>    
+    </data>
+    <data name="Phone" xml:space="preserve">
+        <value> Số điện thoại  </value>    
+    </data>
+    <data name="Email" xml:space="preserve">
+        <value>Email</value>    
+    </data>
+    <data name="FullName" xml:space="preserve">
+        <value> Họ và tên</value>    
+    </data>
+    <data name=" {0} format invalid" xml:space="preserve">
+        <value> {0} định dạng không hợp lệ </value>    
+    </data>
+    <data name=" Cannot read excel file content " xml:space="preserve">
+        <value> Không thể đọc được nội dung của file excel</value>    
+    </data>
+    <data name="Can not import registed user " xml:space="preserve">
+        <value> Không thể thêm người dùng </value>    
+    </data>
+    <data name="Invalid import file format " xml:space="preserve">
+        <value>Định dạng file import không hợp lệ </value>    
+    </data>
+    <data name="Imported {0:N0}/{1:N0} accounts" xml:space="preserve">
+        <value>Đã nhập {0}/{1} người dùng</value>    
+    </data>
+    <data name="Add new successfully " xml:space="preserve">
+        <value>Thêm thành công</value>    
+    </data>
+    <data name="Dashboard" xml:space="preserve">
+        <value>Bảng điều khiển</value>    
+    </data>
+    <data name="System" xml:space="preserve">
+        <value>Hệ thống</value>    
+    </data>
+    <data name="User" xml:space="preserve">
+        <value>Tài khoản quản trị</value>    
+    </data>
+    <data name="User log" xml:space="preserve">
+        <value>Nhật ký người dùng</value>    
+    </data>
+    <data name="User role" xml:space="preserve">
+        <value>Vai trò</value>    
+    </data>
+    <data name="List UserRole" xml:space="preserve">
+        <value>Danh sách vai trò</value>    
+    </data>
+    <data name="User log list" xml:space="preserve">
+        <value>Danh sách lịch sử người dùng</value>    
+    </data>
+    <data name="Nothing" xml:space="preserve">
+        <value>Không chọn</value>    
+    </data>
+    <data name="Blocked" xml:space="preserve">
+        <value>Đã khóa</value>    
+    </data>
+    <data name="UnBlocked" xml:space="preserve">
+        <value>Không khóa</value>    
+    </data>
+    <data name="Right" xml:space="preserve">
+        <value>Phân quyền</value>    
+    </data>
+    <data name="Add new user role {0}" xml:space="preserve">
+        <value>Thêm mới vai trò {0}</value>    
+    </data>
+    <data name="Add new document {0}" xml:space="preserve">
+        <value>Thêm mới hồ sơ {0}</value>    
+    </data>
+    <data name="Edit document {0}" xml:space="preserve">
+        <value> Chỉnh sửa hồ sơ {0} </value>    
+    </data>
+    <data name="Delete user role {0}" xml:space="preserve">
+        <value>Xóa vai trò {0} </value>    
+    </data>
+    <data name="Delete health certification {0}" xml:space="preserve">
+        <value>Xóa giấy khám sức khỏe {0} </value>    
+    </data>
+    <data name="Delete ChangeDriverLicenseDocument {0}" xml:space="preserve">
+        <value>Xóa giấy khám sức khỏe {0} </value>    
+    </data>
+    <data name="Edit right user role {0}" xml:space="preserve">
+        <value>Cập nhật quyền của vai trò {0} </value>
+    </data>
+    <data name="Add new user {0}" xml:space="preserve">
+        <value>Thêm mới tài khoản {0}</value>    
+    </data>
+    <data name="Edit user {0}" xml:space="preserve">
+        <value> Chỉnh sửa tài khoản {0} </value>    
+    </data>
+    <data name="Edit user role {0}" xml:space="preserve">
+        <value> Chỉnh sửa vai trò {0} </value>    
+    </data>
+    <data name="Delete user {0}" xml:space="preserve">
+        <value>Xóa tài khoản {0} </value>    
+    </data>
+    <data name="Account" xml:space="preserve">
+        <value>Tài khoản </value>    
+    </data>
+    <data name="User manager" xml:space="preserve">
+        <value>Người quản lý</value>    
+    </data>
+    <data name="Change infor successfully" xml:space="preserve">
+        <value>Thay đổi thông tin thành công</value>    
+    </data>
+    <data name="RightRole" xml:space="preserve">
+        <value>Vai trò</value>    
+    </data>
+    <data name="UserLog" xml:space="preserve">
+        <value>Nhật ký người dùng</value>    
+    </data>
+    <data name="File" xml:space="preserve">
+        <value>Tài liệu</value>    
+    </data>
+    <data name="Files" xml:space="preserve">
+        <value>Tài liệu</value>    
+    </data>
+    <data name="List files" xml:space="preserve">
+        <value>Danh sách tài liệu</value>    
+    </data>
+    <data name="Document" xml:space="preserve">
+        <value>Hồ sơ</value>    
+    </data>
+    <data name="Image" xml:space="preserve">
+        <value>Hình ảnh</value>    
+    </data>
+    <data name="Default" xml:space="preserve">
+        <value>Mặc định</value>    
+    </data>
+    <data name="Document list" xml:space="preserve">
+        <value>DANH SÁCH BÀN GIAO GPLX</value>    
+    </data>
+    <data name="Address" xml:space="preserve">
+        <value>Địa chỉ</value>    
+    </data>
+    <data name="Note" xml:space="preserve">
+        <value>Ghi chú</value>    
+    </data>
+    <data name="Userlog" xml:space="preserve">
+        <value>Lịch sử người dùng</value>    
+    </data>
+    <data name="Export success" xml:space="preserve">
+        <value>Xuất file thành công</value>    
+    </data>
+    <data name="Image" xml:space="preserve">
+        <value>Hình ảnh</value>    
+    </data>
+    <data name="Upload file" xml:space="preserve">
+        <value>Tải tài liệu</value>    
+    </data>
+
+    <data name="Pass" xml:space="preserve">
+        <value>Hợp lệ</value>    
+    </data>
+    <data name="UnPass" xml:space="preserve">
+        <value>Không hợp lệ</value>    
+    </data>
+    <data name="Detail" xml:space="preserve">
+        <value>Chi tiết</value>    
+    </data>
+    <data name="Change password" xml:space="preserve">
+        <value>Đổi mật khẩu</value>    
+    </data>
+    <data name="Change password successfully" xml:space="preserve">
+        <value>Đổi mật khẩu thành công</value>    
+    </data>
+
+    <data name="Add new file {0}" xml:space="preserve">
+        <value>Thêm mới tài liệu {0}</value>    
+    </data>
+    <data name="Edit file {0}" xml:space="preserve">
+        <value>Chỉnh sửa tài liệu {0}</value>    
+    </data>
+    <data name="Delete file {0}" xml:space="preserve">
+        <value>Xóa những tài liệu {0}</value>    
+    </data>
+    <data name="Index" xml:space="preserve">
+        <value>Xem</value>    
+    </data>
+    <data name="Right roles" xml:space="preserve">
+        <value>Vai trò</value>    
+    </data>
+    <data name="Right role" xml:space="preserve">
+        <value>Vai trò</value>    
+    </data>
+    <data name="User Log" xml:space="preserve">
+        <value>Nhật ký người dùng</value>    
+    </data>
+    <data name="User logs" xml:space="preserve">
+        <value>Nhật ký người dùng</value>    
+    </data>
+    <data name="Driver class invalid" xml:space="preserve">
+        <value>Hạng xe không hợp lệ</value>    
+    </data>
+    <data name="Health certification code" xml:space="preserve">
+        <value>Mã giấy khám sức khỏe</value>    
+    </data>
+    <data name="File health certification invalid" xml:space="preserve">
+        <value>File giấy khám sức khỏe không hợp lệ</value>    
+    </data>
+    <data name="Image invalid" xml:space="preserve">
+        <value>Hình ảnh không hợp lệ</value>    
+    </data>
+    <data name="Close" xml:space="preserve">
+        <value>Đóng</value>    
+    </data>
+    <data name="User" xml:space="preserve">
+        <value>Tài khoản</value>    
+    </data>
+    <data name="Users" xml:space="preserve">
+        <value>Tài khoản</value>    
+    </data>
+    <data name="All" xml:space="preserve">
+        <value>Tất cả</value>
+    </data>
+    <data name="You cannot delete profile has number {0}" xml:space="preserve">
+        <value>Bạn không thể xóa hồ sơ có số {0}.</value>
+    </data>
+    <data name="Delete profile (s) {0}" xml:space="preserve">
+        <value>Xóa hồ sơ {0}.</value>
+    </data>
+    <data name="You cannot update status for this profile" xml:space="preserve">
+        <value>Bạn không có quyền cập nhật trạng thái cho hồ sơ này.</value>
+    </data>
+    <data name="Update status done for profile {0}" xml:space="preserve">
+        <value>Cập nhật trạng thái thành công cho hồ sơ {0}.</value>
+    </data>
+    <data name="Updated profile status successful" xml:space="preserve">
+        <value>Cập nhật trạng thái thành công.</value>
+    </data>
+    <data name="Update status additional info for profile {0}" xml:space="preserve">
+        <value>Cập nhật trạng thái bổ sung cho hồ sơ {0}.</value>
+    </data>
+    <data name="Update status cancel for profile {0}" xml:space="preserve">
+        <value>Hủy hồ sơ {0}.</value>
+    </data>
+
+    <data name="Update report" xml:space="preserve">
+        <value>Cập nhật báo cáo</value>
+    </data>
+    <data name="Report view" xml:space="preserve">
+        <value>Xem báo cáo</value>
+    </data>
+    <data name="Report content" xml:space="preserve">
+        <value>Nội dung báo cáo</value>
+    </data>
+
+    <data name="Register course" xml:space="preserve">
+        <value>Thông tin đăng ký khóa học</value>
+    </data>
+    <data name="Register courses" xml:space="preserve">
+        <value>Thông tin đăng ký khóa học</value>
+    </data>
+
+    <data name="Full name" xml:space="preserve">
+        <value>Họ và tên</value>
+    </data>
+    <data name="Mobile" xml:space="preserve">
+        <value>Số điên thoại</value>
+    </data>
+    <data name="Created at" xml:space="preserve">
+        <value>Ngày đăng ký</value>
+    </data>
+    <data name="Status" xml:space="preserve">
+        <value>Trạng thái</value>
+    </data>
+    <data name="Age" xml:space="preserve">
+        <value>Tuổi</value>
+    </data>
+    <data name="Diseases" xml:space="preserve">
+        <value>Bệnh tật</value>
+    </data>
+    <data name="Register course detail" xml:space="preserve">
+        <value>Chi tiết thông tin đăng ký khóa học</value>
+    </data>
+    <data name="Register course list" xml:space="preserve">
+        <value>Danh sách thông tin đăng ký khóa học</value>
+    </data>
+    <data name="Added register course {0}" xml:space="preserve">
+        <value>Thêm mới thông tin đăng ký khóa học {0}</value>    
+    </data>
+    <data name="Edit register course {0}" xml:space="preserve">
+        <value>Chỉnh sửa thông tin đăng ký khóa học {0}</value>    
+    </data>
+    <data name="Delete register course {0}" xml:space="preserve">
+        <value>Xóa những thông tin đăng ký khóa học {0}</value>    
+    </data>
+
+    <data name="Waiting for pay" xml:space="preserve">
+        <value>Chờ thanh toán</value>
+    </data>
+    <data name="Bought" xml:space="preserve">
+        <value>Đã thanh toán</value>
+    </data>
+    <data name="Request a repay" xml:space="preserve">
+        <value>Yêu cầu hoàn lại</value>
+    </data>
+    <data name="Refunded" xml:space="preserve">
+        <value>Đã hoàn</value>
+    </data>
+    <data name="Number" xml:space="preserve">
+        <value>Mã số</value>
+    </data>
+    <data name="Your account is unpaid" xml:space="preserve">
+        <value>Tài khoản của bạn chưa được thanh toán</value>
+    </data>
+    <data name="Server is not connected" xml:space="preserve">
+        <value>Không thể kết nối đến máy chủ</value>
+    </data>
+     <data name="Your host is not in the room or your internet connection is unstable. Pls wait for reconnecting..." xml:space="preserve">
+        <value>Phòng chưa mở hoặc kết nối internet của bạn không ổn định. Vui lòng chờ App kết nối lại...</value>
+    </data>
+    <data name="Invalid {0}" xml:space="preserve">
+        <value>{0} không hợp lệ.</value>
+    </data>
+    <data name="Register successful" xml:space="preserve">
+        <value>Đăng ký thành công</value>
+    </data>
+    <data name="Please register course before use this feature" xml:space="preserve">
+        <value>Vui lòng đăng ký khóa học trước khi sử dụng tính năng này.</value>
+    </data>
+    <data name="Register successful. Please wait admin approve" xml:space="preserve">
+        <value>Đăng ký khóa học thành công. Vui lòng đợi quản trị viên phê duyệt đăng ký của bạn.</value>
+    </data>
+    <data name="Please wait admin approve" xml:space="preserve">
+        <value>Vui lòng đợi admin phê duyệt yêu cầu đăng ký khóa học của bạn.</value>
+    </data>
+    <data name="Please pay for registered course" xml:space="preserve">
+        <value>Vui lòng thực hiện thanh toán cho khóa học bạn đăng ký.</value>
+    </data>
+    <data name="Your request has been cancelled. Please register again" xml:space="preserve">
+        <value>Yêu cầu của bạn đã bị hủy bỏ. Vui lòng thực hiện đăng ký lại.</value>
+    </data>
+    <data name="Please press to below button to access class room" xml:space="preserve">
+        <value>Vui lòng ấn vào nút bên dưới để tham gia phòng họp hoặc click vào link sau: {0}</value>
+    </data>
+</root>

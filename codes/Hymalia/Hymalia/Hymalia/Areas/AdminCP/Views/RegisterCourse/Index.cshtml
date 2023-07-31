@@ -1,0 +1,110 @@
+﻿
+@using Newtonsoft.Json
+
+@{
+    ViewBag.Title = ViewBag.HeaderTitle = SharedLocalizer.GetText("Register course list");
+}
+
+@section JsLibs
+{
+    <script>
+         function editRegister(id){
+              window.RegisterCourse.execEdit(id)
+          }
+    </script>
+}
+
+<div class="row auto-module">
+    @Html.Hidden("module_configs", JsonConvert.SerializeObject(new
+    {
+        key = "RegisterCourse",
+        controllerName = "RegisterCourse",
+        name = SharedLocalizer.GetText("Register course").ToString(),
+        names = SharedLocalizer.GetText("Register course").ToString()
+    }))
+    
+    <div class="col-12">
+        <!-- BEGIN: toolbar -->
+        <div class="card card-outline card-primary tool-box">
+            <div class="card-body">
+                <button type="button" class="btn btn-danger" onclick="window.RegisterCourse.execDelete()" title="CTRL+D" data-hotkey="CTRL+D"><i class="fas fa-trash"></i> Xóa</button>
+            </div>
+        </div>
+        <!-- END: toolbar -->
+
+        <!-- BEGIN: search -->
+        <div class="card card-outline card-primary search-box">
+            <div class="card-header">
+                <h3 class="card-title">Công cụ tìm kiếm</h3>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body" id="cardBodySearch">
+                <form>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>@SharedLocalizer.GetText("Full name")</label>
+                                <input type="text" class="form-control" name="keyword"/>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>@SharedLocalizer.GetText("Mobile")</label>
+                                <input type="text" class="form-control" name="mobile"/>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Số bảng ghi trên 1 trang</label>
+                                <select class="recordsPerPage form-control"></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center col-12">
+                            <button class="btn btn-primary"><i class="fas fa-search"></i> Tìm kiếm ngay!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- END: search -->
+
+        <!-- BEGIN: table -->
+        <div class="card card-outline card-primary data-box">
+            <div class="card-header">
+                <h3 class="card-title">@SharedLocalizer.GetText("Register list")</h3>
+            </div>
+            <div class="card-body p-0">
+                <table class="tbl-data table no-style table-bordered table-striped" data-order-column="FullName" data-order-dir="asc" data-scroll-x="true">
+                    <thead>
+                    <tr>
+                        <th style="width: 40px; min-width: 40px" data-orderable="false">STT</th>
+                        <th style="width: 30px; min-width: 30px" data-orderable="false" class="text-center">
+                            <div class="icheck-primary d-inline">
+                                <input type="checkbox" class="selector-all" id="selectAll"/>
+                                <label for="selectAll"></label>
+                            </div>
+                        </th>
+                        <th style="width: 150px; min-width: 150px" data-orderable="false" class="text-center">
+                            Tính năng
+                        </th>
+                        <th style="width: 100px; min-width: 100px" data-name="Username">@SharedLocalizer.GetText("Full name")</th>
+                        <th style="width: 100px; min-width: 100px" data-name="Mobile">@SharedLocalizer.GetText("Mobile")</th>
+                        <th style="width: 100px; min-width: 100px" data-name="CreatedAt">@SharedLocalizer.GetText("Created at")</th>
+                        <th style="width: 100px; min-width: 100px">@SharedLocalizer.GetText("Status")</th>
+                        <th style="width: 100px; min-width: 100px">@SharedLocalizer.GetText("Age")</th>
+                        <th style="width: 100px; min-width: 100px">@SharedLocalizer.GetText("Diseases")</th>
+                        <th style="width: 200px; min-width: 200px">@SharedLocalizer.GetText("Address")</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <!-- END: table -->
+    </div>
+</div>

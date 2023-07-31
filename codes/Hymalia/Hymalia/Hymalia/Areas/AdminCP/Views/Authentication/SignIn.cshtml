@@ -1,0 +1,87 @@
+﻿
+@model Hymalia.Areas.AdminCP.Models.Authentication.SignInRequestModel;
+@{
+    Layout = null;
+    var languageCode = ViewBag.LanguageCode;
+}
+
+<!DOCTYPE html>
+<html lang="@languageCode">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Service portal | @SharedLocalizer.GetText("Sign in")</title>
+    <link rel="stylesheet" href="/themes/admin-cp/css/app.css">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+    <div class="login-logo">
+        <a href="@Url.Action("Index", "Home",new {area="AdminCP"})"><b>Hymalia</b></a>
+    </div>
+    <div class="card">
+        <div class="card-body login-card-body">
+            <p class="login-box-msg">@SharedLocalizer.GetText("Sign in to start your session")</p>
+            <form  asp-controller="Authentication" asp-action="SignIn" method="post" onSubmitSuccess="onLoginSuccess">
+                <input type="hidden" asp-for="returnUrl">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" asp-for="username" class="form-control" placeholder="@SharedLocalizer.GetText("Username")"/>
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-user-circle"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <span asp-validation-for="username"></span>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="password" asp-for="password" class="form-control" placeholder="@SharedLocalizer.GetText("Password")"/>
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <span asp-validation-for="password"></span>
+                </div>
+                <div class="row">
+                    <div class="col-7">
+                        <div class="icheck-primary">
+                            <input type="checkbox" asp-for="isRemember">
+                            <label for="isRemember">
+                                @SharedLocalizer.GetText("Remember me")
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <button type="submit" class="btn btn-primary btn-block">@SharedLocalizer.GetText("Sign in")</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="/themes/admin-lte/plugins/jquery/jquery.min.js"></script>
+<script src="/themes/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/themes/admin-lte/plugins/toastr/toastr.min.js"></script>
+<script src="/themes/admin-lte/plugins/sweetalert2/sweetalert2.min.js"></script>
+<script src="/themes/admin-lte/dist/js/adminlte.min.js"></script>
+<script src="/themes/admin-lte/plugins/pace-progress/pace.min.js" data-pace-options='{ "ajax": true }'></script>
+<script src="/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+<script src="/lib/jquery-form/jquery.form.js"></script>
+<script src="@($"/themes/admin-cp/locale/{languageCode}.js")"></script>
+<script src="/themes/admin-cp/app.js"></script>
+<script>
+function onLoginSuccess(form, response) {
+    if (response.error)
+        return;
+    
+    location.href = response.data;
+}
+</script>
+</body>
+</html>

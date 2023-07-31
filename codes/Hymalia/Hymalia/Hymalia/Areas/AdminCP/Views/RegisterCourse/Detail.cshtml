@@ -1,0 +1,105 @@
+﻿@using Newtonsoft.Json
+@using Hymalia.Common.Enums.RegisterCourse
+@model Hymalia.Areas.AdminCP.Models.RegisterCourse.EditRequestModel
+
+@{
+    ViewBag.Title = @SharedLocalizer.GetText("Register course detail");
+    Layout = "_Layout";
+}
+
+@section JsLibs
+{
+    <script >
+        async function changeStatus(id,idStatus){
+             if (!await dialogs.confirm("Bạn có thật sự muốn chuyển trạng thái hồ sơ này không?")) {
+                    return;
+                }
+                
+                $.post(window.RegisterCourse.getActionUrl("ChangeStatus"), {id,idStatus}, "json").done(async function (response) {
+                    if (response.error) {
+                        await dialogs.alert(response.message, "error");
+                        return;
+                    }
+        
+                    await dialogs.alert(response.message, "success");
+                    window.location.href = "/AdminCp/RegisterCourse";
+                }).fail(function () {
+                    dialogs.alert(languages["Connect to server failed!"], "error");
+                })
+        }
+    </script>
+}
+
+<div class="auto-module">
+    @Html.Hidden("module_configs", JsonConvert.SerializeObject(new
+    {
+        key = "RegisterCourse",
+        controllerName = "RegisterCourse",
+        name = SharedLocalizer.GetText("Register course").ToString(),
+        names = SharedLocalizer.GetText("Register course").ToString()
+    }))
+</div>
+
+@if (Model.id > 0)
+{
+    <div class="card card-outline card-primary tool-box">
+        <div class="card-body">
+            <button class="btn btn-default" onclick="window.history.back()">
+                <i class="fa fa-window-close mr-1"></i> @SharedLocalizer.GetText("Close")
+            </button>
+            <button class="btn btn-danger" onclick="changeStatus(@Model.id,1)">@SharedLocalizer.GetText("Waiting for pay")</button>
+            <button class="btn btn-success" onclick="changeStatus(@Model.id,2)">@SharedLocalizer.GetText("Bought")</button>
+            <button class="btn btn-warning" onclick="changeStatus(@Model.id,3)">@SharedLocalizer.GetText("Request a repay")</button>
+            <button class="btn btn-secondary" onclick="changeStatus(@Model.id,4)">@SharedLocalizer.GetText("Refunded")</button>
+        </div>
+    </div>
+}
+
+<div class="card card-outline card-primary search-box">
+    <div class="card-header">
+        <h3 class="card-title">@SharedLocalizer.GetText("Register course detail")</h3>
+    </div>
+    <div class="card-body p-0">
+        <table class="table table-bordered table-striped no-style">
+            <tr>
+                <th style="width: 200px">@SharedLocalizer.GetText("Full name")</th>
+                <td>@Model.fullName</td>
+                <th style="width: 150px">@SharedLocalizer.GetText("Created at")</th>
+                <td>@Model.createdAt</td>
+            </tr>
+
+            <tr>
+                <th style="width: 200px">@SharedLocalizer.GetText("Age")</th>
+                <td>@Model.age</td>
+                <th style="width: 150px">@SharedLocalizer.GetText("Status")</th>
+                <td>@Model.stausName</td>
+            </tr>
+            <tr>
+                <th style="width: 200px">@SharedLocalizer.GetText("Mobile")</th>
+                <td>@Model.mobile</td>
+                @if (Model.idStatus == RegisterCourseStatus.Bought)
+                {
+                    <th style="width: 150px">@SharedLocalizer.GetText("Number")</th>
+                    <td>@ViewBag.Number</td>
+                }
+            </tr>
+            <tr>
+                <th style="width: 200px">@SharedLocalizer.GetText("Email")</th>
+                <td>@Model.email</td>
+            </tr>
+            <tr>
+                <th style="width: 150px">@SharedLocalizer.GetText("Zalo ID")</th>
+                <td>@Model.idZaloUser</td>
+            </tr>
+            <tr>
+                <th style="width: 200px">@SharedLocalizer.GetText("Address")</th>
+                <td>@Model.address</td>
+            </tr>
+            <tr>
+                <th style="width: 200px">@SharedLocalizer.GetText("Diseases")</th>
+                <td>@Model.diseases</td>
+            </tr>
+    
+        </table>
+    </div>
+</div>
